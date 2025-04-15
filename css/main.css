@@ -1,0 +1,94 @@
+@import url('https://fonts.google.com/share?selection.family=Unbounded:wght@200..900');
+
+@font-face {
+    font-family: 'Tilda Sans VF';
+    src: url('../Fonts/TildaSans-VF.ttf');
+}
+
+* {
+    font-family: 'Tilda Sans VF', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Unbounded', sans-serif;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+nav header main {
+    background-color: #FFFFFF;
+}
+
+/* NAVIGATION */
+.nav__logo {
+    width: 39px;
+    height: 49px;
+}
+
+
+.nav__group {
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    padding: 0 33px;
+}
+
+.nav__item {
+    display: flex;
+    align-items: center;
+}
+
+.nav__item-link {
+    margin: 0 20px;
+    font-size: 18px;
+    border-bottom: solid 3px #FFFFFF;
+    transition: border-bottom-color 0.4s ease-in-out;
+}
+
+.nav__item-link:hover {
+    border-bottom: solid 3px #00428C;
+}
+
+.nav__item-phone {
+    display: flex;
+    align-items: center;
+}
+
+.nav__item-phone img {
+    width: 24px;
+    height: 24px;
+}
+
+.nav__item-link-active {
+    margin: 0 20px;
+    font-size: 18px;
+    border-bottom: solid 3px #00428C;
+}
+
+
+/* HEADER */
+header{
+    display: flex;
+    background-image: url('../img/image_bckg_1.png');
+    height: 645px;
+    
+}
+
+
+
+
+/* FOOTER */
+
+footer {
+    background-color: #FAFBFD;
+}
