@@ -1,4 +1,4 @@
-@import url('https://fonts.google.com/share?selection.family=Unbounded:wght@200..900');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
 
 @font-face {
     font-family: 'Tilda Sans VF';
@@ -9,6 +9,7 @@
     font-family: 'Tilda Sans VF', sans-serif;
     padding: 0;
     margin: 0;
+    font-weight: normal;
 }
 
 a {
@@ -78,17 +79,117 @@ nav header main {
 
 /* HEADER */
 header{
-    display: flex;
+    display: grid;
+    grid-template-columns: 20%;
+    grid-template-rows: 220px;
     background-image: url('../img/image_bckg_1.png');
     height: 645px;
-    
+    color: #FFFFFF;
+}
+.header__info{
+    width: 720px;
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+.header__info h1{
+    font-size: 48px;
+}
+
+.header__info h3{
+    margin-top: 20px;
+    font-size: 16px;
 }
 
 
-
-
 /* FOOTER */
-
 footer {
     background-color: #FAFBFD;
+    height: 640px;
+}
+
+.footer__info {
+    display: grid;
+    grid-template-rows: 255px 185px 200px;
+    margin: 0 auto;
+    width: 1120px;
+}
+
+.footer__links {
+    grid-row-start: 1;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-around;
+}
+
+.footer__links a {
+    color: #756F6F;
+    width: 25%;
+    font-size: 24px;
+    transition: color 0.2s ease-in-out;
+}
+
+.footer__links a:hover {
+    color: #00428C;
+}
+
+.footer__contacts{
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.2fr;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    padding: 40px 70px;
+}
+
+.footer__contacts-item {
+    display: flex;
+    flex-flow: column;
+}
+
+.footer__contacts-item h3{
+    font-family: 'Tilda Sans VF', sans-serif;
+    font-size: 24px;
+}
+
+.footer__contacts-item p{
+    color: #827777;
+    font-size: 24px;
+}
+
+.footer__contacts-item a{
+    width: fit-content;
+    color: #FFFFFF;
+    font-size: 15px;
+    margin-top: 15px;
+    padding: 6px 25px;
+    border-radius: 5px;
+    border: 1px solid #00428C;
+    background-color: #00428C;
+    transition: all 0.2s ease-in-out;
+}
+
+.footer__contacts-item a:hover{
+    background-color: #FFFFFF;
+    color: #00428C;
+}
+
+.footer__contacts-social{
+    display: flex;
+    align-items: center;
+}
+
+.footer__contacts-social a{
+    padding-left: 25px;
+}
+
+.footer__copyright {
+    padding: 40px 0;
+}
+
+.footer__copyright-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.footer__copyright-links a{
+    text-decoration: underline;
 }
