@@ -83,6 +83,7 @@ header{
     grid-template-columns: 20%;
     grid-template-rows: 220px;
     background-image: url('../img/image_bckg_1.png');
+    background-position: center bottom;
     height: 645px;
     color: #FFFFFF;
 }

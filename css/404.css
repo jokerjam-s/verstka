@@ -1,0 +1,35 @@
+.main_group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../img/404.jpg");
+    background-position: center bottom;
+    height: 1060px;
+    color: #FFFFFF;
+}
+.main_group h1{
+    font-size: 240px;
+}
+
+.main_group p{
+    font-size: 40px;
+}
+
+.main_group a{
+    color: #00428C;
+    background-color: #F2F5FA;
+    border: #00428C 1px solid;
+    font-size: 22px;
+    font-family: 'Unbounded', sans-serif;
+    padding: 15px 55px;
+    margin-top: 55px;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.main_group a:hover{
+    color: #F2F5FA;
+    background-color: #00428C;
+}
+
