@@ -82,13 +82,21 @@ header{
     display: grid;
     grid-template-columns: 20%;
     grid-template-rows: 220px;
-    background-image: url('../img/image_bckg_1.png');
-    background-position: center bottom;
     height: 645px;
     color: #FFFFFF;
+    background-position: center bottom;
 }
+
+.header_background-main {
+    background-image: url('../img/image_bckg_1.png');
+}
+
+.header_background-about {
+    background-image: url('../img/about_bckg.jpg');
+}
+
 .header__info{
-    width: 720px;
+    width: 970px;
     grid-column-start: 2;
     grid-row-start: 2;
 }
