@@ -58,11 +58,116 @@
     font-size: 20px;
 }
 
-
 .about__back__info {
     background-color: #00428C;
 }
 
 .about__margin-between {
     margin: 0 50px;
+}
+
+.about__faces {
+    display: flex;
+    flex-direction: column;
+    width: 1120px;
+    margin: 85px auto 0 auto;
+}
+
+.about__faces h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.about__faces-photos {
+    display: grid;
+    grid-template: 50% 50% / repeat(3, 1fr);
+    gap: 25px;
+}
+
+.about__faces-info {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 340px;
+    height: 410px;
+    background-color: rgb(0, 0, 0, 0.4);
+    border-radius: 15px;
+    /*padding: 40px;*/
+}
+
+.about__faces-cart{
+    background: #FFFFFF;
+}
+
+.about__faces-cart:hover .about__faces-info {
+    display: flex;
+}
+
+.about__faces-info h3 {
+    font-size: 24px;
+    color: #FFFFFF;
+    margin: 0 40px;
+    text-align: center;
+}
+.about__faces-info p {
+    font-size: 20px;
+    color: #FFFFFF;
+    margin: 0 40px;
+    text-align: center;
+}
+
+.about__review {
+    display: flex;
+    flex-direction: column;
+    width: 1120px;
+    margin: 95px auto;
+}
+
+.about__review h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.about__review-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 10px;
+}
+
+.about__review-cards a{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.about__review-info {
+    display: flex;
+    flex-direction: column;
+    height: 205px;
+    padding: 20px;
+    justify-content: space-between;
+    transition: all 0.2s ease-in-out;
+}
+
+.about__review-info:hover {
+    -webkit-box-shadow: 0px 0px 10px 10px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 0px 10px 10px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 0px 10px 10px rgba(34, 60, 80, 0.2);
+}
+
+.about__review-info h3 {
+    font-size: 16px;
+}
+
+.about__review-info-text {
+    font-size: 13px;
+    height: 105px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.about__review-info-small-text {
+    font-size: 12px;
+    color: #7C7070;
 }
