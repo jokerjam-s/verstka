@@ -78,7 +78,7 @@ nav header main {
 
 
 /* HEADER */
-header{
+header {
     display: grid;
     grid-template-columns: 20%;
     grid-template-rows: 220px;
@@ -95,16 +95,21 @@ header{
     background-image: url('../img/about_bckg.jpg');
 }
 
-.header__info{
+.header_background-sale {
+    background-image: url('../img/sale_bckg.jpg');
+}
+
+.header__info {
     width: 970px;
     grid-column-start: 2;
     grid-row-start: 2;
 }
-.header__info h1{
+
+.header__info h1 {
     font-size: 48px;
 }
 
-.header__info h3{
+.header__info h3 {
     margin-top: 20px;
     font-size: 16px;
 }
@@ -142,7 +147,7 @@ footer {
     color: #00428C;
 }
 
-.footer__contacts{
+.footer__contacts {
     display: grid;
     grid-template-columns: 1fr 1fr 0.2fr;
     background-color: #FFFFFF;
@@ -155,27 +160,27 @@ footer {
     flex-flow: column;
 }
 
-.footer__contacts-item h3{
+.footer__contacts-item h3 {
     font-family: 'Tilda Sans VF', sans-serif;
     font-size: 24px;
 }
 
-.footer__contacts-item p{
+.footer__contacts-item p {
     color: #827777;
     font-size: 24px;
 }
 
-.footer__contacts-item a{
+.footer__contacts-item a {
     font-size: 15px;
     margin-top: 15px;
 }
 
-.footer__contacts-social{
+.footer__contacts-social {
     display: flex;
     align-items: center;
 }
 
-.footer__contacts-social a{
+.footer__contacts-social a {
     padding-left: 25px;
 }
 
@@ -188,7 +193,8 @@ footer {
     justify-content: space-between;
     margin-top: 20px;
 }
-.footer__copyright-links a{
+
+.footer__copyright-links a {
     text-decoration: underline;
 }
 
@@ -202,7 +208,7 @@ footer {
     transition: all 0.2s ease-in-out;
 }
 
-.button:hover{
+.button:hover {
     background-color: #FFFFFF;
     color: #00428C;
 }

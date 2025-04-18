@@ -1,0 +1,49 @@
+#consultation {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1.2fr;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "title stars pays forms"
+                         "title years pays forms";
+    width: 1120px;
+    margin: 120px auto 0 auto;
+    grid-row-gap: 5px;
+}
+
+#title {
+    grid-area: title;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    background-color: #00428C;
+    color: white;
+    width: 220px;
+    height: 200px;
+    border-radius: 15px;
+    font-size: 20px;
+    text-align: left;
+    padding: 15px;
+}
+
+#stars {
+    grid-area: stars;
+}
+
+#pays {
+    grid-area: pays;
+}
+
+.stars-pays__style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #00428C;
+    background-color: #F1F4FB;
+    border-radius: 20px;
+    font-size: 20px;
+    height: 110px;
+}
+
+#forms {
+    grid-area: forms;
+}
