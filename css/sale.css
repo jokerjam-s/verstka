@@ -163,6 +163,7 @@
     background: #F1F4FB;
     border-radius: 15px;
     padding: 100px 35px 50px 35px;
+    text-align: justify;
 }
 
 .how__work__info h3 {
@@ -177,11 +178,24 @@
 .how__work__question {
     display: flex;
     flex-direction: column;
-    /*justify-content: space-around;*/
     margin: 55px 0 55px 90px;
     width: 400px;
     height: 310px;
     background: rgb( from #00428C r g b / 70%);
     padding: 25px 35px 25px 35px;
     color: #FFFFFF;
+}
+
+
+.how__work__question p, h2 {
+    margin-bottom: 20px;
+}
+
+.how__work-btn {
+    font-size: 16px;
+    font-weight: bold;
+    width: fit-content;
+    color: #00428C;
+    background: rgb(255, 255, 255, 0.6);
+    padding: 10px;
 }

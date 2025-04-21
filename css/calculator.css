@@ -26,7 +26,6 @@
 .calculator__flat__form-info {
     display: flex;
     flex-direction: column;
-    /*width: 375px;*/
     background-color: #00428C;
     border-radius: 15px;
     color: #FFFFFF;
@@ -70,6 +69,10 @@
     border: solid 1px #00428C;
     border-radius: 5px;
     padding: 10px;
+}
+
+.calculator__flat__form-control:last-child {
+    margin: 0;
 }
 
 .calculator__flat__form button{
