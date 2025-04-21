@@ -6,6 +6,7 @@
 
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/sale.css">
+    <link rel="stylesheet" href="css/calculator.css">
 </head>
 <body>
 <!--Навигация-->
@@ -30,9 +31,9 @@
 <header class="header_background-sale">
     <div class="header__info">
         <h1>Продать квартиру в Минске легко с "Estate Elite"</h1>
-        <h3>Продаем на 3,5% дороже, чем по рынку. Гарантируем всестороннюю юридическую экспертизу квартиры, согласуем
+        <p>Продаем на 3,5% дороже, чем по рынку. Гарантируем всестороннюю юридическую экспертизу квартиры, согласуем
             условия, обеспечим конфиденциальность расчетов и своевременность платежей.
-        </h3>
+        </p>
     </div>
 </header>
 <!--END Заголовок-->
@@ -41,7 +42,7 @@
 <main>
     <div class="container">
         <div id="consultation">
-            <div id="title">
+            <div id="title" class="title-pays__style">
                 <div>
                     <h3>Эффективные</h3>
                     <p>технологии продаж</p>
@@ -51,17 +52,192 @@
                     <p>всех сделок</p>
                 </div>
             </div>
-            <div id="stars" class="stars-pays__style">
+            <div id="stars" class="stars-years__style">
                 <h3>Более 60 наград</h3>
             </div>
-            <div id="years" class="stars-pays__style">
+            <div id="years" class="stars-years__style">
                 <h3>14 лет работы</h3>
             </div>
-            <div id="pays">dfgdfg dfgf fgdfgf</div>
-            <div id="forms">dfgdfgfgdfg dfgdfg</div>
+            <div id="pays" class="title-pays__style">
+                <div>
+                    <h3>Аттестованные </h3>
+                    <p>риэлторы</p>
+                </div>
+                <div>
+                    <h3>Оплата</h3>
+                    <p>по факту</p>
+                </div>
+            </div>
+            <form action="" method="post">
+                <div id="forms">
+                    <h3>Бесплатная консультация</h3>
+                    <input id="client_name" name="client_name" type="text" placeholder="Ваше имя"
+                           class="forms-control__input">
+                    <input id="client_phone" name="client_phone" type="text" placeholder="Номер телефона"
+                           class="forms-control__input">
+                    <div class="forms-control">
+                        <input id="client_agree" name="client_agree" type="checkbox" class="forms-control__checkbox">
+                        <label for="client_agree">Соглашаюсь с обработкой персональных данных</label>
+                    </div>
+                    <button type="submit">Отправить заявку</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="calculator__flat">
+            <h2>Калькулятор стоимости квартиры</h2>
+            <div class="calculator__flat__form">
+                <div>
+                    <div class="calculator__flat__form-control">
+                        <label>Сколько комнат в вашей квартире?</label>
+                        <div class="form_radio_group">
+                            <div class="form_radio_group-item">
+                                <input id="radio-1" type="radio" name="room_count" value="1">
+                                <label for="radio-1">1</label>
+                            </div>
+                            <div class="form_radio_group-item">
+                                <input id="radio-2" type="radio" name="room_count" value="2">
+                                <label for="radio-2">2</label>
+                            </div>
+                            <div class="form_radio_group-item">
+                                <input id="radio-3" type="radio" name="room_count" value="3">
+                                <label for="radio-3">3</label>
+                            </div>
+                            <div class="form_radio_group-item">
+                                <input id="radio-4" type="radio" name="room_count" value="4">
+                                <label for="radio-4">4</label>
+                            </div>
+                            <div class="form_radio_group-item">
+                                <input id="radio-5" type="radio" name="room_count" value="5">
+                                <label for="radio-5">5+</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calculator__flat__form-control">
+                        <label>Укажите общую площадь квартиры</label>
+                        <input type="number" id="area" name="area" class="forms-control__input" min=0.00 max=1000.00
+                               step=1.00 value=0.00>
+                    </div>
+
+                    <div class="calculator__flat__form-control">
+                        <label>Материалы стен</label>
+                        <div class="form_radio_group">
+                            <div class="form_radio_group-item">
+                                <input id="material-1" type="radio" name="material" value="Панельные">
+                                <label for="material-1">Панельные</label>
+                            </div>
+                            <div class="form_radio_group-item">
+                                <input id="material-2" type="radio" name="material" value="Кирпичные">
+                                <label for="material-2">Кирпичные</label>
+                            </div>
+                            <div class="form_radio_group-item">
+                                <input id="material-3" type="radio" name="material" value="Блочные">
+                                <label for="material-3">Блочные</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calculator__flat__form-control">
+                        <label>Год постройки дома</label>
+                        <select name="building_year" id="building_year" class="forms-control__select">
+                            <option value="1">до 1960</option>
+                            <option value="2">1961-1970</option>
+                            <option value="3">1970-1999</option>
+                            <option value="4">2000-2015</option>
+                            <option value="5">после 2015</option>
+                        </select>
+                    </div>
+
+                    <div class="calculator__flat__form-control">
+                        <label>Тип жилья</label>
+                        <select name="building_type" id="building_type" class="forms-control__select">
+                            <option value="0" disabled selected>выберите тип</option>
+                            <option value="1">сталинка</option>
+                            <option value="2">хрущевка</option>
+                            <option value="3">стандарт</option>
+                            <option value="4">современная панель</option>
+                            <option value="5">монолитный дом</option>
+                        </select>
+                    </div>
+
+                    <div class="calculator__flat__form-control">
+                        <label>Район/микрорайон</label>
+                        <select name="region" id="region" class="forms-control__select" value="0">
+                            <option value="0" disabled selected>выберите район</option>
+                            <option value="1">Заводской</option>
+                            <option value="2">Октябрьский</option>
+                            <option value="3">Фрунзенский</option>
+                            <option value="4">Первомайский</option>
+                            <option value="5">Центральный</option>
+                        </select>
+                    </div>
+
+                    <div class="calculator__flat__form-control">
+                        <label>Ремонт</label>
+                        <select name="repair" id="repair" class="forms-control__select">
+                            <option value="0" disabled selected>выберите ремонт</option>
+                            <option value="1">без ремонта</option>
+                            <option value="2">с ремонтом</option>
+                            <option value="3">с дизайнерским ремонтом</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="flex-end-items">
+                    <button type="reset">Сбросить</button>
+                    <button type="submit">Рассчитать</button>
+                </div>
+                <div class="calculator__flat__form-info">
+                    <h3>Вся аналитика тут</h3>
+                    <a href="#">Активность покупателей</a>
+                    <a href="#">Количество сделок</a>
+                    <a href="#">Изменение цен</a>
+                    <a href="#">Средние сроки продажи</a>
+                    <a href="#">Популярные районы</a>
+                    <a href="#">Рейтинг объектов</a>
+                    <a href="#">Типы недвижимости</a>
+                </div>
+            </div>
         </div>
     </div>
 </main>
+
+<main class="background__blue">
+    <div class="container how__work">
+        <div class="how__work-cell-1">
+            <div class="how__work__info">
+                <h3>Как мы работаем</h3>
+                <p>
+                    Все заботы по продаже и покупке недвижимости – организацию фото- и видео-съемки, виртуального тура,
+                    рекламу, активный поиск покупателей, бесконечный поток звонков, показов, переговоров, согласование
+                    выгодных финансовых и юридических условий, подготовку и проведение сделки – мы возьмем в свои руки.
+                    Воспользуйтесь актуальными сервисами для продавцов, которые предлагает наша компания:
+                    доставка риэлтерских услуг:
+                </p>
+                <ul>
+                    <li>агент выедет к Вам на объект и поможет определить его стоимость.Вы получите детальную
+                        консультацию по сделке в удобное для Вас время.
+                    </li>
+                    <li>бесплатная консультация Вы получите детальную консультацию в удобное для Вас время: по телефону,
+                        в любом нашем офисе в Минске или с выездом специалиста на дом.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="how__work-cell-2">
+            <div class="how__work__question">
+                <h2>Есть вопросы?</h2>
+                <p>Главный офис</p>
+                <p>ул. Свердлова, 32</p>
+                <p>+375291111111</p>
+                <p>+375291111111</p>
+                <p>estateelite@gmail.com</p>
+                <a href="#">Перезвоните мне</a>
+            </div>
+        </div>
+    </div>
+</main>
+
 <!--END Основной раздел-->
 
 <!--Подвал-->

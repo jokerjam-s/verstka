@@ -109,7 +109,7 @@ header {
     font-size: 48px;
 }
 
-.header__info h3 {
+.header__info p {
     margin-top: 20px;
     font-size: 16px;
 }
@@ -211,4 +211,8 @@ footer {
 .button:hover {
     background-color: #FFFFFF;
     color: #00428C;
+}
+
+.background__blue {
+    background-color: #00428C;
 }

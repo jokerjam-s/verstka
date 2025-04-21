@@ -1,0 +1,160 @@
+.calculator__flat {
+    display: flex;
+    flex-direction: column;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.calculator__flat h2 {
+    font-size: 36px;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.calculator__flat__form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.2fr;
+    grid-gap: 5px;
+    padding: 35px;
+
+    -webkit-box-shadow: -1px 0px 14px 4px rgba(34, 60, 80, 0.37);
+    -moz-box-shadow: -1px 0px 14px 4px rgba(34, 60, 80, 0.37);
+    box-shadow: -1px 0px 14px 4px rgba(34, 60, 80, 0.37);
+    border-radius: 25px;
+}
+
+.calculator__flat__form-info {
+    display: flex;
+    flex-direction: column;
+    /*width: 375px;*/
+    background-color: #00428C;
+    border-radius: 15px;
+    color: #FFFFFF;
+    padding: 15px;
+}
+
+.calculator__flat__form-info h3 {
+    font-size: 24px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+.calculator__flat__form-info a {
+    text-decoration: none;
+    width: fit-content;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    border-bottom: solid 2px #00428C;
+    transition: border-bottom-color 0.2s ease-in-out;
+}
+
+.calculator__flat__form-info a:hover {
+    border-bottom: solid 2px #FFFFFF ;
+}
+
+.calculator__flat__form label {
+    color: rgb(0, 0, 0, 0.4);
+    font-size: 20px;
+}
+.calculator__flat__form-control {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin-bottom: 10px;
+}
+
+.calculator__flat__form-control input, select {
+    appearance: none;
+    outline: none;
+    font-size: 18px;
+    color: #00428C;
+    border: solid 1px #00428C;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.calculator__flat__form button{
+    appearance: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 10px 15px;
+}
+
+.calculator__flat__form button[type="submit"] {
+    color: #FFFFFF;
+    background: #00428C;
+    border: solid 1px #00428C;
+    border-radius: 10px;
+}
+
+.calculator__flat__form button[type="submit"]:hover {
+    color: #00428C;
+    background: #FFFFFF;
+}
+
+.calculator__flat__form button[type="reset"] {
+    color: #828282;
+    background: #D9D9D9;
+    border: solid 1px #D9D9D9;
+    border-radius: 10px;
+}
+.calculator__flat__form button[type="reset"]:hover {
+    color: #D9D9D9;
+    background: #828282;
+}
+
+.flex-end-items {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+.form_radio_group {
+    display: inline-block;
+    overflow: hidden;
+}
+.form_radio_group-item {
+    display: inline-block;
+    float: left;
+}
+.form_radio_group input[type=radio] {
+    display: none;
+}
+.form_radio_group label {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0px 15px;
+    line-height: 34px;
+    font-size: 16px;
+    border: 1px solid #00428C;
+    color: #00428C;
+    border-right: none;
+    user-select: none;
+}
+
+.form_radio_group .form_radio_group-item:first-child label {
+    border-radius: 6px 0 0 6px;
+}
+.form_radio_group .form_radio_group-item:last-child label {
+    border-radius: 0 6px 6px 0;
+    border-right: 1px solid #00428C;
+}
+
+/* Checked */
+.form_radio_group input[type=radio]:checked + label {
+    background: #00428C;
+    color: #FFFFFF;
+}
+
+/* Hover */
+.form_radio_group label:hover {
+    color: #FFFFFF;
+    background-color: #00428C;
+}
+
+/*!* Disabled *!*/
+/*.form_radio_group input[type=radio]:disabled + label {*/
+/*    background: #efefef;*/
+/*    color: #666;*/
+/*}*/
