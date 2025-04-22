@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/apartment.css">
+</head>
+<body>
+<!--Навигация-->
+<nav>
+    <div class="container nav__group">
+        <div class="nav__item">
+            <img class="nav__logo" src="img/logo.svg" alt="Лого">
+            <a href="#" class="nav__item-link">Купить недвижимость</a>
+            <a href="#" class="nav__item-link">Продать недвижимость</a>
+            <a href="#" class="nav__item-link">О компании</a>
+        </div>
+        <div class="nav__item">
+            <a href="#" class="nav__item-link nav__item-phone"><img src="img/phone.svg" alt="phone"/>
+                +375(29)1111111</a>
+            <a href="#" class="nav__item-link">Войти</a>
+        </div>
+    </div>
+</nav>
+<!--END Навигация-->
+
+<!--Заголовок-->
+<header class="header_background-apartment">
+    <div class="header__info-apartment">
+        <h1>Минск, Кирилла Туровского ул, 4</h1>
+        <a><img src="img/arrow-back.svg" alt="back"/> Вернуться к свободным объектам</a>
+    </div>
+</header>
+<!--END Заголовок-->
+
+<!--Основной раздел-->
+<main>
+    <div class="container">
+        <div class="apartment">
+            <div class="apartment__main">
+                <div class="apartment__main-tabs">
+                    <img id="plan_1" src="img/plan-2.png" alt="plan" />
+                    <img id="plan_2" src="img/plan-1.png" alt="plan" hidden="hidden"/>
+                    <div class="apartment_radio_group">
+                        <div class="apartment_radio_group-item">
+                            <input id="tab_1" type="radio" name="switch" value="Планировка" checked="checked"/>
+                            <label for="tab_1">Планировка</label>
+                        </div>
+                        <div class="apartment_radio_group-item">
+                            <input id="tab_2" type="radio" name="switch" value="На этаже"/>
+                            <label for="tab_2">На этаже</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="apartment__main-info">
+
+                </div>
+            </div>
+            <div class="apartment__galery"></div>
+            <div class="apartment__text"></div>
+        </div>
+    </div>
+</main>
+<!--END Основной раздел-->
+
+<!--Подвал-->
+<footer>
+    <div class="container footer__info">
+        <div class="footer__links">
+            <a href="#">Выбрать недвижимость</a>
+            <a href="#">Аналитика</a>
+            <a href="#">Команда</a>
+            <a href="#">Trade-in</a>
+            <a href="#">Жилая недвижимость</a>
+            <a href="#">Продать недвижимость</a>
+            <a href="#">Партнеры</a>
+            <a href="#">Ипотека</a>
+            <a href="#">Коммерческая недвижимость</a>
+            <a href="#">Консалтинговые работы</a>
+            <a href="#">О компании</a>
+            <a href="#">Инвесторам</a>
+        </div>
+
+        <div class="footer__contacts">
+            <div class="footer__contacts-item">
+                <h3>Минск</h3>
+                <p>111111, улица Свердлова, 32</p>
+                <a href="#" class="button">Показать на карте</a>
+            </div>
+            <div class="footer__contacts-item">
+                <h3>+375291111111</h3>
+                <p>estateelite@gmail.com</p>
+                <a href="#" class="button">Заказать звонок</a>
+            </div>
+            <div class="footer__contacts-social">
+                <a href="#"><img src="img/facebook.svg" alt="facebook"></a>
+                <a href="#"><img src="img/Instagram.svg" alt="Instagram"></a>
+            </div>
+
+        </div>
+
+        <div class="footer__copyright">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                officia deserunt mollit anim id est laborum.
+            </p>
+            <div class="footer__copyright-links">
+                <p>&copy; Estate Elite</p>
+                <a href="#">Согласие на обработку пользовательских данных</a>
+                <p>Сидорук А.С.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--END Подвал-->
+
+<script src="js/apartment.js"></script>
+
+</body>
+</html>

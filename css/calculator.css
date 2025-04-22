@@ -20,14 +20,14 @@
     -webkit-box-shadow: -1px 0px 14px 4px rgba(34, 60, 80, 0.37);
     -moz-box-shadow: -1px 0px 14px 4px rgba(34, 60, 80, 0.37);
     box-shadow: -1px 0px 14px 4px rgba(34, 60, 80, 0.37);
-    border-radius: 25px;
+    border-radius: 10px;
 }
 
 .calculator__flat__form-info {
     display: flex;
     flex-direction: column;
     background-color: #00428C;
-    border-radius: 15px;
+    border-radius: 10px;
     color: #FFFFFF;
     padding: 15px;
 }

@@ -19,7 +19,7 @@
     color: white;
     width: 220px;
     height: 200px;
-    border-radius: 20px;
+    border-radius: 10px;
     font-size: 20px;
     text-align: left;
     padding: 15px;
@@ -50,7 +50,7 @@
     align-items: center;
     color: #00428C;
     background-color: #F1F4FB;
-    border-radius: 20px;
+    border-radius: 10px;
     height: 110px;
     width: 250px;
 }
@@ -156,17 +156,19 @@
 }
 
 .how__work__info {
+    color: #00428C;
     display: block;
     top: -80px;
     position: relative;
     width: 570px;
     background: #F1F4FB;
-    border-radius: 15px;
+    border-radius: 10px;
     padding: 100px 35px 50px 35px;
     text-align: justify;
 }
 
 .how__work__info h3 {
+    color: black;
     font-size: 24px;
     padding-bottom: 20px;
 }
@@ -186,7 +188,6 @@
     color: #FFFFFF;
 }
 
-
 .how__work__question p, h2 {
     margin-bottom: 20px;
 }
@@ -199,3 +200,54 @@
     background: rgb(255, 255, 255, 0.6);
     padding: 10px;
 }
+
+.best-workers {
+    display: flex;
+    flex-direction: column;
+    max-width: 1120px;
+    margin: 180px auto 160px auto;
+}
+
+.best-workers h2 {
+    color: black;
+}
+
+.best-workers__grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /*grid-row-gap: 10px;*/
+}
+
+.best-workers__card {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.best-workers__card-img {
+    border-radius: 15px;
+}
+
+.best-workers__card-title {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Tilda Sans VF', sans-serif;
+    line-height: 24px;
+    margin: 10px 0;
+    color: black;
+}
+
+.best-workers__card-text {
+    font-size: 16px;
+    margin-bottom: 35px;
+}
+
+.best-workers__card-btn {
+    cursor: pointer;
+    color: #00428C;
+    background: #F1F4FB;
+    padding: 10px 60px;
+    line-height: 24px;
+    font-size: 20px;
+}
+
