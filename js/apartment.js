@@ -2,7 +2,6 @@ const tab_1 = document.getElementById("tab_1");
 const tab_2 = document.getElementById("tab_2");
 
 const tabClick = (event) => {
-    // event.preventDefault();
     const img_1 = document.getElementById('plan_1');
     const img_2 = document.getElementById('plan_2');
 
