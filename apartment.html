@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/apartment.css">
     <link rel="stylesheet" href="css/calculator2.css">
-    <link rel="stylesheet" href="css/range.css">
+    <link rel="stylesheet" href="css/ion.rangeSlider.min.css">
 </head>
 <body>
 <!--Навигация-->
@@ -131,44 +131,75 @@
             <div class="calculator-2-body">
                 <div class="calculator-2-body-items">
                     <div class="calculator-2-conditions">
-                        <div class="range" style="--value: 50000">
-                            <label class="range-label" for="calc_cost">
-                                Стоимость объекта
-                            </label>
-                            <div class="track"></div>
-                            <div class="progress"></div>
-                            <div class="thumbs">
+                        <label for="calc_cost">Стоимость объекта (руб.)</label>
+                        <input id="calc_cost" type="text" class="js-range-slider"/>
 
-                                <input
-                                        class="range-input"
-                                        id="calc_cost"
-                                        type="range"
-                                        min="10000"
-                                        max="9000000"
-                                        value="50000"
-                                        step="1"
-                                />
-                                <output class="range-output" id="calc_cost_val">50 000<span>&nbsp;руб.</span></output>
+                        <label for="calc_vznos">Первоначальный взнос (руб.)</label>
+                        <input id="calc_vznos" type="text" class="js-range-slider" />
+                        <label for="calc_term">Срок кредита (лет)</label>
+                        <input id="calc_term" type="text" class="js-range-slider" />
+                    </div>
+                    <div>
+                        <div id="calculation">
+                            <div class="calculation__item item-1">
+                                <div class="calculation__item-label">Стоимость объекта</div>
+                                <div id="cost_object" class="calculation__item-info"></div>
+                            </div>
+                            <div class="calculation__item item-2">
+                                <div class="calculation__item-label">Срок кредита</div>
+                                <div id="credit_term" class="calculation__item-info"></div>
+                            </div>
+                            <div class="calculation__item item-3">
+                                <div class="calculation__item-label">Первоначальный взнос</div>
+                                <div id="first_payment" class="calculation__item-info"></div>
+                            </div>
+                            <div class="calculation__item item-4">
+                                <div class="calculation__item-label">Ставка</div>
+                                <div id="percentage" class="calculation__item-info">7 %</div>
                             </div>
                         </div>
-
-
-
-                        <label for="calc_vznos">Первоначальный взнос</label>
-                        <span id="calc_vznos_val">10 000 руб.</span>
-                        <input id="calc_vznos" type="range" value="10000" min="5000" max="500000" step="5"/>
-                        <label for="calc_term">Срок кредита</label>
-                        <span id="calc_term_val">10 лет</span>
-                        <input id="calc_term" type="range" value="10" min="1" max="40" step="1"/>
+                        <div id="month-payment">
+                            <div class="month-payment__label">Ежемесячный платёж</div>
+                            <div id="month-payment-info" class="month-payment__info"></div>
+                            <a class="month-payment__btn" href="#">Отправить заявку</a>
+                        </div>
                     </div>
-                    <div></div>
                 </div>
                 <div class="calculator-2-text">
                     Информация по условиям ипотечного кредитования носит ознакомительный характер. Подробную и
                     актуальную информацию необходимо уточнять в отделе продаж.
                 </div>
             </div>
+        </div>
 
+        <div id="like-apartments">
+            <h2>Похожие предложения</h2>
+            <div id="like-apartments__cards">
+                <a class="like-apartments__card" href="#">
+                    <img src="img/plan-2.png" alt="plan" width="210px"/>
+                    <h3>Апартамент №54</h3>
+                    <p class="like-apartments__card-room">2 спальни</p>
+                    <p class="like-apartments__card-area">64 м<sup>2</sup></p>
+                    <p class="like-apartments__card-price">319 232 руб.</p>
+                </a>
+                <a class="like-apartments__card" href="#">
+                    <img src="img/plan-2.png" alt="plan" width="210px"/>
+                    <h3>Апартамент №54</h3>
+                    <p class="like-apartments__card-room">2 спальни</p>
+                    <p class="like-apartments__card-area">64 м<sup>2</sup></p>
+                    <p class="like-apartments__card-price">319 232 руб.</p>
+                </a>
+                <a class="like-apartments__card" href="#">
+                    <img src="img/plan-2.png" alt="plan" width="210px"/>
+                    <h3>Апартамент №54</h3>
+                    <p class="like-apartments__card-room">2 спальни</p>
+                    <p class="like-apartments__card-area">
+                        <img src="img/area.svg" alt="area">
+                        64 м<sup>2</sup>
+                    </p>
+                    <p class="like-apartments__card-price">319 232 руб.</p>
+                </a>
+            </div>
         </div>
     </div>
 </main>
@@ -228,7 +259,9 @@
 </footer>
 <!--END Подвал-->
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="js/apartment.js"></script>
+<script src="js/ion.rangeSlider.min.js"></script>
 <script src="js/range.js"></script>
 </body>
 </html>

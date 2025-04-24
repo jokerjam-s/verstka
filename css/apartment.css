@@ -25,7 +25,7 @@
     display: flex;
     background: #FFFFFF;
     flex-direction: column;
-    width: 960px;
+    width: 950px;
     border: solid 1px white;
     margin: 50px auto;
     border-radius: 10px;
@@ -196,4 +196,65 @@
 .apartment_radio_group label:hover {
     color: black;
     background-color: #F5F6F9;
+}
+
+#like-apartments {
+    display: flex;
+    flex-direction: column;
+    width: 1120px;
+    margin: 50px auto 135px auto;
+}
+
+#like-apartments h2 {
+    font-size: 36px;
+}
+
+#like-apartments__cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px ;
+}
+
+.like-apartments__card {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    /*border: #999999 solid 1px;*/
+    border-radius: 10px;
+    padding: 25px 50px;
+
+    -webkit-box-shadow: -1px 0px 14px 4px rgba(34, 60, 80, 0.37);
+    -moz-box-shadow: -1px 0px 14px 4px rgba(34, 60, 80, 0.37);
+    box-shadow: -1px 0px 14px 4px rgba(34, 60, 80, 0.37);
+}
+
+.like-apartments__card h3{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+.like-apartments__card-room{
+    color: #756F6F;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+
+.like-apartments__card-area{
+    color: #00428C;
+    font-size: 20px;
+    line-height: 21px;
+    margin-bottom: 15px;
+}
+
+.like-apartments__card-price{
+    color: #00428C;
+    border-bottom: #00428C solid 3px;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: bold;
 }

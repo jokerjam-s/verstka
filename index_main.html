@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/filters.css">
+    <link rel="stylesheet" href="css/ion.rangeSlider.min.css">
+</head>
+<body>
+<!--Навигация-->
+<nav>
+    <div class="container nav__group">
+        <div class="nav__item">
+            <img class="nav__logo" src="img/logo.svg" alt="Лого">
+            <a href="#" class="nav__item-link-active">Купить недвижимость</a>
+            <a href="#" class="nav__item-link">Продать недвижимость</a>
+            <a href="#" class="nav__item-link">О компании</a>
+        </div>
+        <div class="nav__item">
+            <a href="#" class="nav__item-link nav__item-phone"><img src="img/phone.svg" alt="phone"/>
+                +375(29)1111111</a>
+            <a href="#" class="nav__item-link">Войти</a>
+        </div>
+    </div>
+</nav>
+<!--END Навигация-->
+
+<!--Заголовок-->
+<header class="header_background-main">
+    <div class="header__info">
+        <h1>Estate Elite - агентство элитной недвижимости</h1>
+        <p>На выбор более 1000 объектов
+            недвижимости от застройщиков
+            с удобной инфраструктурой
+        </p>
+    </div>
+</header>
+<!--END Заголовок-->
+
+<!--Основной раздел-->
+<main>
+    <div class="container">
+        <div id="filters">
+            <form method="post" action="#">
+            <div id="filters-param">
+                <div class="filter__parameter">
+                    <div class="filter__parameter-label">Город</div>
+                    <div class="filter__parameter-input">Минск</div>
+                </div>
+                <div class="filter__parameter">
+                    <div class="filter__parameter-label">Район</div>
+
+                    <select name="region_city" id="region_city" class="filter__parameter-input">
+                        <option value="1">Октябрьский</option>
+                        <option value="2">Заводской</option>
+                        <option value="3">Фрунзенский</option>
+                        <option value="4">Первомайский</option>
+                        <option value="5">Центральный</option>
+                        <option value="6">Московский</option>
+                    </select>
+                </div>
+                <div class="filter__parameter">
+                    <div class="filter__parameter-label">Метро</div>
+                    <select name="metro" id="metro" class="filter__parameter-input">
+                        <option value="1">Немига</option>
+                        <option value="2">Партизанская</option>
+                        <option value="3">Московская</option>
+                        <option value="4">Фрунзенская</option>
+                        <option value="5">Автозаводская</option>
+                        <option value="6">Купаловская</option>
+                    </select>
+                </div>
+                <div class="filter__parameter">
+                    <div class="filter__parameter-label">Кол-во комнат</div>
+                    <select name="count_rooms" id="count_rooms" class="filter__parameter-input">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5+</option>
+                    </select>
+                </div>
+                <div class="filter__parameter">
+                    <div class="filter__parameter-label">Стадия</div>
+                    <select name="building_state" id="building_state" class="filter__parameter-input">
+                        <option value="1">Сдан</option>
+                        <option value="2">Строится</option>
+                    </select>
+                </div>
+                <div class="filter__parameter">
+                    <div class="filter__parameter-label">Паркинг</div>
+                    <select name="parking" id="parking" class="filter__parameter-input">
+                        <option value="1">Есть</option>
+                        <option value="2">Нет</option>
+                    </select>
+                </div>
+            </div>
+            <div id="filters-price">
+                <div class="filters-price-1">
+                    <div class="filter-price-item">
+                        <div class="filter__parameter-label">Стоимость</div>
+
+                    </div>
+                    <div class="filter-price-item">
+                        <div class="filter__parameter-label">Площадь</div>
+                    </div>
+                </div>
+                <div class="filters-price-2">
+                    <button type="submit" class="submit_filter_btn">Показать проекты</button>
+                </div>
+            </div>
+            </form>
+        </div>
+    </div>
+</main>
+<!--END Основной раздел-->
+
+<!--Подвал-->
+<footer>
+    <div class="container footer__info">
+        <div class="footer__links">
+            <a href="#">Выбрать недвижимость</a>
+            <a href="#">Аналитика</a>
+            <a href="#">Команда</a>
+            <a href="#">Trade-in</a>
+            <a href="#">Жилая недвижимость</a>
+            <a href="#">Продать недвижимость</a>
+            <a href="#">Партнеры</a>
+            <a href="#">Ипотека</a>
+            <a href="#">Коммерческая недвижимость</a>
+            <a href="#">Консалтинговые работы</a>
+            <a href="#">О компании</a>
+            <a href="#">Инвесторам</a>
+        </div>
+
+        <div class="footer__contacts">
+            <div class="footer__contacts-item">
+                <h3>Минск</h3>
+                <p>111111, улица Свердлова, 32</p>
+                <a href="#" class="button">Показать на карте</a>
+            </div>
+            <div class="footer__contacts-item">
+                <h3>+375291111111</h3>
+                <p>estateelite@gmail.com</p>
+                <a href="#" class="button">Заказать звонок</a>
+            </div>
+            <div class="footer__contacts-social">
+                <a href="#"><img src="img/facebook.svg" alt="facebook"></a>
+                <a href="#"><img src="img/Instagram.svg" alt="Instagram"></a>
+            </div>
+
+        </div>
+
+        <div class="footer__copyright">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                officia deserunt mollit anim id est laborum.
+            </p>
+            <div class="footer__copyright-links">
+                <p>&copy; Estate Elite</p>
+                <a href="#">Согласие на обработку пользовательских данных</a>
+                <p>Сидорук А.С.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--END Подвал-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/ion.rangeSlider.min.js"></script>
+</body>
+</html>

@@ -5,10 +5,16 @@
     margin: 0 auto;
 }
 
+.calculator-2 h2{
+    font-size: 36px;
+    line-height: 45px;
+}
+
 .calculator-2-body {
     border: solid 1px white;
     border-radius: 10px;
     padding: 65px 90px;
+    margin-top: 35px;
     -webkit-box-shadow: -1px 0px 14px 4px rgba(34, 60, 80, 0.37);
     -moz-box-shadow: -1px 0px 14px 4px rgba(34, 60, 80, 0.37);
     box-shadow: -1px 0px 14px 4px rgba(34, 60, 80, 0.37);
@@ -17,6 +23,7 @@
 .calculator-2-body-items{
     display: grid;
     grid-template-columns: 1fr 575px;
+    grid-column-gap: 40px;
 }
 
 .calculator-2-conditions {
@@ -29,6 +36,11 @@
     color: #999999;
     font-size: 20px;
     line-height: 24px;
+    margin-top: 20px;
+}
+
+.calculator-2-conditions label:first-of-type{
+    margin-top: 0;
 }
 
 .calculator-2-conditions span{
@@ -41,4 +53,92 @@
     color: #999999;
     font-size: 24px;
     text-align: justify;
+}
+
+#calculation {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    padding: 30px;
+    border: #E7E7E7 solid 2px;
+
+    grid-row-gap: 60px;
+    grid-column-gap: 40px;
+}
+
+.calculation__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-1{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.item-2{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.item-3{
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+.item-4{
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.calculation__item-label {
+    font-size: 24px;
+    line-height: 29px;
+    color: #999999;
+}
+.calculation__item-info {
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: bold;
+}
+
+#month-payment{
+    display: flex;
+    padding: 20px 30px;
+    margin: 30px auto;
+    justify-content: space-between;
+    background: #F1F4FB;
+
+    -webkit-box-shadow: -1px 0px 10px 4px rgba(34, 60, 80, 0.37);
+    -moz-box-shadow: -1px 0px 10px 4px rgba(34, 60, 80, 0.37);
+    box-shadow: -1px 0px 10px 4px rgba(34, 60, 80, 0.37);
+}
+
+.month-payment__label{
+    color: #999999;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 18px;
+    align-content: center;
+    width: 98px;
+}
+
+.month-payment__info {
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: bold;
+}
+
+.month-payment__btn{
+    color: white;
+    background: #00428C;
+    border: #00428C 1px solid;
+    border-radius: 10px;
+    padding: 15px 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+.month-payment__btn:hover{
+    background: white;
+    color: #00428C;
 }
