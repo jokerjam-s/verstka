@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/filters.css">
+    <link rel="stylesheet" href="css/ion.rangeSlider.min.css">
+    <link rel="stylesheet" href="css/best_of.css">
+</head>
+<body>
+<!--Навигация-->
+<nav>
+    <div class="container nav__group">
+        <div class="nav__item">
+            <img class="nav__logo" src="img/logo.svg" alt="Лого">
+            <a href="#" class="nav__item-link-active">Купить недвижимость</a>
+            <a href="#" class="nav__item-link">Продать недвижимость</a>
+            <a href="#" class="nav__item-link">О компании</a>
+        </div>
+        <div class="nav__item">
+            <a href="#" class="nav__item-link nav__item-phone"><img src="img/phone.svg" alt="phone"/>
+                +375(29)1111111</a>
+            <a href="#" class="nav__item-link">Войти</a>
+        </div>
+    </div>
+</nav>
+<!--END Навигация-->
+
+<!--Заголовок-->
+<header class="header_background-main">
+    <div class="header__info">
+        <h1>Estate Elite - агентство элитной недвижимости</h1>
+        <p>
+            На выбор более 1000 объектов
+            недвижимости от застройщиков
+            с удобной инфраструктурой
+        </p>
+    </div>
+</header>
+<!--END Заголовок-->
+
+<!--Основной раздел-->
+<main>
+    <div class="container">
+        <div id="filters">
+            <form method="post" action="#">
+                <div id="filters-param">
+                    <div class="filter__parameter">
+                        <div class="filter__parameter-label">Город</div>
+                        <div class="filter__parameter-input">Минск</div>
+                    </div>
+                    <div class="filter__parameter">
+                        <div class="filter__parameter-label">Район</div>
+
+                        <select name="region_city" id="region_city" class="filter__parameter-input">
+                            <option value="1">Октябрьский</option>
+                            <option value="2">Заводской</option>
+                            <option value="3">Фрунзенский</option>
+                            <option value="4">Первомайский</option>
+                            <option value="5">Центральный</option>
+                            <option value="6">Московский</option>
+                        </select>
+                    </div>
+                    <div class="filter__parameter">
+                        <div class="filter__parameter-label">Метро</div>
+                        <select name="metro" id="metro" class="filter__parameter-input">
+                            <option value="1">Немига</option>
+                            <option value="2">Партизанская</option>
+                            <option value="3">Московская</option>
+                            <option value="4">Фрунзенская</option>
+                            <option value="5">Автозаводская</option>
+                            <option value="6">Купаловская</option>
+                        </select>
+                    </div>
+                    <div class="filter__parameter">
+                        <div class="filter__parameter-label">Кол-во комнат</div>
+                        <select name="count_rooms" id="count_rooms" class="filter__parameter-input">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5+</option>
+                        </select>
+                    </div>
+                    <div class="filter__parameter">
+                        <div class="filter__parameter-label">Стадия</div>
+                        <select name="building_state" id="building_state" class="filter__parameter-input">
+                            <option value="1">Сдан</option>
+                            <option value="2">Строится</option>
+                        </select>
+                    </div>
+                    <div class="filter__parameter">
+                        <div class="filter__parameter-label">Паркинг</div>
+                        <select name="parking" id="parking" class="filter__parameter-input">
+                            <option value="1">Есть</option>
+                            <option value="2">Нет</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="filters-price">
+                    <div class="filters-price-1">
+                        <div class="filter-price-item">
+                            <div class="filter__parameter-label">Стоимость</div>
+                            <input id="filters_cost" type="text" class="js-range-slider" name="my_range" value=""/>
+                        </div>
+                        <div class="filter-price-item">
+                            <div class="filter__parameter-label">Площадь</div>
+                            <input id="filters_area" type="text" class="js-range-slider" name="my_range" value=""/>
+                        </div>
+                    </div>
+                    <div class="filters-price-2">
+                        <button type="submit" class="submit_filter_btn">Показать проекты</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div id="best-of">
+            <h2>Лучшие предложения</h2>
+            <a href="#" class="best-of_card">
+                <img src="img/best-1.jpg" alt="photo">
+                <div class="best-of_info">
+                    <h3>Квартира с дизайнерским интерьером</h3>
+                    <div class="best-of_info_label">Премиум | Квартиры</div>
+                    <div class="best-of_info_address">
+                        <div class="best-of_info_address-city">Минск</div>
+                        <div class="best-of_info_address-street">Кирилла Туровского ул, 6</div>
+                    </div>
+                    <p class="best-of_info_text">
+                        Дизайн интерьера выполнен в сложном стиле, объединяющем английский и
+                        французский дизайн. Теплая цветовая гамма создает уютную атмосферу, продуманная планировка
+                        обеспечивает удобство.
+                    </p>
+                    <div class="best-of_info_price">
+                        <div class="best-of_info_cost">287 406 руб.</div>
+                        <img src="img/label.svg">
+                        <div class="best-of_info_area-meter">4988 руб./м<sup>2</sup></div>
+                        <img src="img/area.svg">
+                        <div class="best-of_info_area-meter">64 м<sup>2</sup></div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="best-of_card">
+                <img src="img/best-2.jpg" alt="photo">
+                <div class="best-of_info">
+                    <h3>Квартира с дизайнерским интерьером</h3>
+                    <div class="best-of_info_label">Премиум | Квартиры</div>
+                    <div class="best-of_info_address">
+                        <div class="best-of_info_address-city">Минск</div>
+                        <div class="best-of_info_address-street">Кирилла Туровского ул, 6</div>
+                    </div>
+                    <p class="best-of_info_text">
+                        Дизайн интерьера выполнен в сложном стиле, объединяющем английский и
+                        французский дизайн. Теплая цветовая гамма создает уютную атмосферу, продуманная планировка
+                        обеспечивает удобство.
+                    </p>
+                    <div class="best-of_info_price">
+                        <div class="best-of_info_cost">287 406 руб.</div>
+                        <img src="img/label.svg">
+                        <div class="best-of_info_area-meter">4988 руб./м<sup>2</sup></div>
+                        <img src="img/area.svg">
+                        <div class="best-of_info_area-meter">64 м<sup>2</sup></div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="best-of_card">
+                <img src="img/best-3.jpg" alt="photo">
+                <div class="best-of_info">
+                    <h3>Квартира с дизайнерским интерьером</h3>
+                    <div class="best-of_info_label">Премиум | Квартиры</div>
+                    <div class="best-of_info_address">
+                        <div class="best-of_info_address-city">Минск</div>
+                        <div class="best-of_info_address-street">Кирилла Туровского ул, 6</div>
+                    </div>
+                    <p class="best-of_info_text">
+                        Дизайн интерьера выполнен в сложном стиле, объединяющем английский и
+                        французский дизайн. Теплая цветовая гамма создает уютную атмосферу, продуманная планировка
+                        обеспечивает удобство.
+                    </p>
+                    <div class="best-of_info_price">
+                        <div class="best-of_info_cost">287 406 руб.</div>
+                        <img src="img/label.svg">
+                        <div class="best-of_info_area-meter">4988 руб./м<sup>2</sup></div>
+                        <img src="img/area.svg">
+                        <div class="best-of_info_area-meter">64 м<sup>2</sup></div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</main>
+
+<main class="background__blue">
+    <div class="container exclusive">
+        <div class="exclusive-cell-1">
+            <div id="exclusive-cell__slide">
+                <div id="exclusive__digits">500</div>
+                <div id="exclusive__title">сотрудников</div>
+                <div id="exclusive__text">по всей Беларуси</div>
+                <img id="exclusive__slide-btn" src="img/slide-1.svg" alt="slider">
+            </div>
+        </div>
+        <div class="exclusive-cell-2">
+            <div id="exclusive__info">
+                <h3>
+                    Эксклюзивные предложения на
+                    премиальную жилую недвижимость
+                    и новостройки бизнес-класса в Минске
+                </h3>
+                <p>
+                    Все жилые комплексы соответсвуют требованиям жилья премиум и бизнес-класса: престижное
+                    месторасположение с готовой инфраструктурой, удобная транспортная доступность, индивидульная
+                    архитектура, авторский дизайн отделки, фасадная вентиляция, энергосберегающие стеклопакеты,
+                    качественные железобетонные каркасы, высококлассные теплоизоляционные материлы, собственный паркинг,
+                    внутренняя территория и другое.
+                </p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<main>
+    <div class="container">
+        <div id="team">
+            <img src="img/team.jpg" alt="team">
+            <div id="team__content">
+                <h2>Команда</h2>
+                <p>Наша команда состоит из ведущих экспертов рынка, которые обладают более чем 10-ти летнем опытом в сфере маркетинга</p>
+                <a href="#">Подробнее ></a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!--END Основной раздел-->
+
+<!--Подвал-->
+<footer>
+    <div class="container footer__info">
+        <div class="footer__links">
+            <a href="#">Выбрать недвижимость</a>
+            <a href="#">Аналитика</a>
+            <a href="#">Команда</a>
+            <a href="#">Trade-in</a>
+            <a href="#">Жилая недвижимость</a>
+            <a href="#">Продать недвижимость</a>
+            <a href="#">Партнеры</a>
+            <a href="#">Ипотека</a>
+            <a href="#">Коммерческая недвижимость</a>
+            <a href="#">Консалтинговые работы</a>
+            <a href="#">О компании</a>
+            <a href="#">Инвесторам</a>
+        </div>
+
+        <div class="footer__contacts">
+            <div class="footer__contacts-item">
+                <h3>Минск</h3>
+                <p>111111, улица Свердлова, 32</p>
+                <a href="#" class="button">Показать на карте</a>
+            </div>
+            <div class="footer__contacts-item">
+                <h3>+375291111111</h3>
+                <p>estateelite@gmail.com</p>
+                <a href="#" class="button">Заказать звонок</a>
+            </div>
+            <div class="footer__contacts-social">
+                <a href="#"><img src="img/facebook.svg" alt="facebook"></a>
+                <a href="#"><img src="img/Instagram.svg" alt="Instagram"></a>
+            </div>
+
+        </div>
+
+        <div class="footer__copyright">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                officia deserunt mollit anim id est laborum.
+            </p>
+            <div class="footer__copyright-links">
+                <p>&copy; Estate Elite</p>
+                <a href="#">Согласие на обработку пользовательских данных</a>
+                <p>Сидорук А.С.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--END Подвал-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/ion.rangeSlider.min.js"></script>
+<script src="js/filterRange.js"></script>
+<script src="js/exclusive.js"></script>
+</body>
+</html>

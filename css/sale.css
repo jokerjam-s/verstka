@@ -136,7 +136,7 @@
 
 .how__work {
     display: grid;
-    grid-template-columns: 1fr 970fr;
+    grid-template-columns: 1fr 970px;
     height: 472px;
     margin-top: 225px;
     font-size: 20px;
@@ -158,7 +158,7 @@
 .how__work__info {
     color: #00428C;
     display: block;
-    top: -80px;
+    top: -70px;
     position: relative;
     width: 570px;
     background: #F1F4FB;
